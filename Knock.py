@@ -57,9 +57,19 @@ def clear():
     if "linux" in sys.platform.lower():os.system("clear")
     elif "win" in sys.platform.lower():os.system("cls")
     else:os.system("clear")
-def banner():
-    print("\n%s    _________ __     \n%s   / ____/ (_) /____  ║ %sDesign By %sJEECK %s& %sdec jeeck\n%s  / __/ / / / __/ _ \ ║ %sFB %s: %sFacebook.com/1000xxxx\n%s / /___/ / / /_/  __/ ║ %sFB %s: %sJECKO X GANZ\n%s/_____/_/_/\__/\___/  ║ %sGithub %s: %sGithub.com/mrjeeck\n"%(O,O,P,O,P,O,O,P,O,P,O,P,O,P,O,P,O,P))
-def menu_log():
+### BAGIAN LOGO ###
+def logo():
+	os.system("clear")
+	print("""%s
+ \x1b[1;92m _________             \x1b[1;93m_____    _______   \x1b[1;92m__________
+ \x1b[1;92m/   _____/            \x1b[1;93m/  _  \   \      \  \x1b[1;92m\____    /
+ \x1b[1;92m\_____  \   \x1b[1;93m_______  /  /_\  \  /   |   \   \x1b[1;92m/     /
+ \x1b[1;92m/ V2.1   \ \x1b[1;93m/______/ /    |    \/    |    \ \x1b[1;92m/     /_ 
+ \x1b[1;92m/______  /          \x1b[1;93m\____|__  /\____|__  /\x1b[1;92m/_______ \  
+ \x1b[1;92m       \/     \x1b[1;93m              \/         \/         \x1b[1;92m\/    """%(N))
+ 
+
+   def menu_log():
     os.system('rm -rf token.txt')
     clear()
     banner()
